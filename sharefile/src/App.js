@@ -1,13 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./reusableComponents/NavBar";
-import { useState } from "react";
+import { Route, Switch } from "react-router-dom";
+import {Home} from '../src/imports/Imports.jsx';
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar />
-    </div>
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
+    </>
   );
 }
 
