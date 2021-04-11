@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import LayoutJs from './component/LayoutJs';
-import NavbarJs from './component/NavbarJs';
+import logo from "./logo.svg";
+import "./App.css";
+import NavBar from "./reusableComponents/NavBar";
+import { useState } from "react";
 
 function App() {
   return (
-    <div >
-      <NavbarJs />
+    <div>
+      <NavBar />
     </div>
   );
 }
