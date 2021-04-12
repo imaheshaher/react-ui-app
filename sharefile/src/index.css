@@ -11,6 +11,8 @@
   --grad-1: #1cccf8de;
   --grad-2: #42b5d1;
   --card-bg: #fffffff1;
+  --icon-bg: #aed1f3;
+  --button-bg: #ff2600ef;
 }
 .body {
   background-color: var(--pure);
@@ -59,7 +61,7 @@
   height: 80vh;
   padding: 1rem;
   display: flex;
-  /* background: saddlebrown; */
+  background: saddlebrown;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -92,4 +94,92 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-actions {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main-actions .action-buttons div:first-child {
+  width: 80px;
+  height: 30px;
+  padding: 0.2em;
+  background-color: lightgrey;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-actions .action-buttons div:first-child button {
+  padding: 0.3em;
+  border-radius: 6px;
+}
+.main-actions .action-buttons div:first-child button:hover {
+  background: var(--pure);
+}
+
+/* card */
+.card-container {
+  width: 350px;
+  height: auto;
+  background: transparent;
+  border: none;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  border-radius: 20px;
+}
+.card-container:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.card-container .card-action {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.file-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.file-info div {
+  padding: 2rem;
+  color: var(--button-color);
+  border-radius: 10px;
+  background-color: var(--icon-bg);
+}
+.active {
+  color: tomato;
+}
+.file-info div .fas {
+  font-size: 22px;
+}
+.file-info small {
+  margin-top: 20px;
+}
+.fs-i {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.fs-i div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+.fs-i button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: var(--button-bg);
+  border-radius: 10px;
+  color: var(--pure);
 }
